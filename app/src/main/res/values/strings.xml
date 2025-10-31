@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Protótipo</string>
+    <string-array name="prioridades_array">
+        <item>Baixa</item>
+        <item>Média</item>
+        <item>Alta</item>
+    </string-array>
+</resources>
