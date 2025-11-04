@@ -10,16 +10,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Protótipo">
+
+        <activity
+            android:name=".MyTicketsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AccountSettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetalhesChamadoActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainScreenActivity"
             android:exported="false" />
+
         <!-- Aqui definimos que o MainActivity é a tela inicial -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

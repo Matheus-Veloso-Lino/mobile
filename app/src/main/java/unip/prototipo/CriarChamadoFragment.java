@@ -42,7 +42,8 @@ public class CriarChamadoFragment extends Fragment {
                 return;
             }
 
-            Chamado chamado = new Chamado(titulo, descricao, prioridade);
+            long id = ChamadoRepository.getNextId();
+            Chamado chamado = new Chamado(id, titulo, descricao, prioridade, "Aberto"); // Adiciona o status padrão
             ChamadoRepository.adicionarChamado(chamado);
 
             Toast.makeText(getContext(), "Chamado criado com sucesso!", Toast.LENGTH_SHORT).show();
@@ -55,4 +56,3 @@ public class CriarChamadoFragment extends Fragment {
         return view;
     }
 }
-

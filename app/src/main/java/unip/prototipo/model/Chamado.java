@@ -1,14 +1,24 @@
 package unip.prototipo.model;
 
-public class Chamado {
+import java.io.Serializable;
+
+public class Chamado implements Serializable {
+    private long id;
     private String titulo;
     private String descricao;
     private String prioridade;
+    private String status; // Novo campo
 
-    public Chamado(String titulo, String descricao, String prioridade) {
+    public Chamado(long id, String titulo, String descricao, String prioridade, String status) {
+        this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
         this.prioridade = prioridade;
+        this.status = status;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getTitulo() {
@@ -21,5 +31,9 @@ public class Chamado {
 
     public String getPrioridade() {
         return prioridade;
+    }
+
+    public String getStatus() {
+        return status;
     }
 }

@@ -1,5 +1,7 @@
 package unip.prototipo;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,10 +33,17 @@ public class ChamadoAdapter extends RecyclerView.Adapter<ChamadoAdapter.ViewHold
     }
 
     @Override
-public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Chamado chamado = listaChamados.get(position);
         holder.textTitulo.setText(chamado.getTitulo());
         holder.textDescricao.setText(chamado.getDescricao());
+
+        holder.itemView.setOnClickListener(v -> {
+            Context context = v.getContext();
+            Intent intent = new Intent(context, DetalhesChamadoActivity.class);
+            intent.putExtra("chamado", chamado);
+            context.startActivity(intent);
+        });
     }
 
     @Override

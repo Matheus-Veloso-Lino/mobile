@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Seção 1: Perfil do Usuário -->
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:text="Meu Perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvViewProfile"
+            android:text="Visualizar perfil"
+            style="@style/ProfileMenuItem"/>
+
+        <TextView
+            android:id="@+id/tvEditProfile"
+            android:text="Editar Perfil"
+            style="@style/ProfileMenuItem"/>
+
+        <TextView
+            android:id="@+id/tvAccountSettings"
+            android:text="Configurações da conta"
+            style="@style/ProfileMenuItem"/>
+
+        <!-- Seção 2: Ações HelpDesk -->
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_marginTop="16dp"
+            android:text="Ações HelpDesk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvMyTickets"
+            android:text="Meus chamados"
+            style="@style/ProfileMenuItem"/>
+
+        <TextView
+            android:id="@+id/tvCreateTicket"
+            android:text="Criar chamado"
+            style="@style/ProfileMenuItem"/>
+
+        <!-- Seção 4: Ajuda e Suporte -->
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_marginTop="16dp"
+            android:text="Ajuda e Suporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvContactSupport"
+            android:text="Contato com suporte"
+            style="@style/ProfileMenuItem"/>
+
+        <TextView
+            android:id="@+id/tvAboutApp"
+            android:text="Sobre o app"
+            style="@style/ProfileMenuItem"/>
+
+    </LinearLayout>
+</ScrollView>

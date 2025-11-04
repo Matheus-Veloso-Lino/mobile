@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Protótipo</string>
+    <string name="app_name">HelpDesk</string>
     <string-array name="prioridades_array">
         <item>Baixa</item>
         <item>Média</item>

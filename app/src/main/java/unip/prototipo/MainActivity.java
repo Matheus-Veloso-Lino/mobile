@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextUser = findViewById(R.id.editTextUser);
         EditText editTextPassword = findViewById(R.id.editTextPassword);
         Button buttonLogin = findViewById(R.id.buttonLogin);
+        TextView tvForgotPassword = findViewById(R.id.tvForgotPassword);
 
         buttonLogin.setOnClickListener(v -> {
             String user = editTextUser.getText().toString();
@@ -27,14 +29,17 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(MainActivity.this, MainScreenActivity.class);
+                intent.putExtra("USER_NAME", user);
                 startActivity(intent);
                 finish();
-                // Aqui você pode abrir outra tela se quiser
             } else {
                 Toast.makeText(this, "Usuário ou senha incorretos!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        tvForgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ForgotPasswordActivity.class);
+            startActivity(intent);
+        });
     }
 }
-
-
