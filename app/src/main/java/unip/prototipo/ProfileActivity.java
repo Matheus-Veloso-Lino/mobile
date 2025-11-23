@@ -22,7 +22,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.tvEditProfile).setOnClickListener(this);
         findViewById(R.id.tvAccountSettings).setOnClickListener(this);
 
-        // Seção 2: HelpDesk
+        // Seção 2: Ações HelpDesk
         findViewById(R.id.tvMyTickets).setOnClickListener(this);
         findViewById(R.id.tvCreateTicket).setOnClickListener(this);
 
@@ -59,7 +59,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private void showContactSupportDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Contato com Suporte")
-                .setMessage("Para obter ajuda, por favor, envie um e-mail para:\n\nsuporte.helpdesk@exemplo.com")
+                .setMessage("Para obter ajuda, por favor, envie um e-mail para:\n\nsuporte.helptech@exemplo.com")
                 .setPositiveButton("OK", null)
                 .show();
     }
@@ -67,7 +67,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private void showAboutAppDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Sobre o App")
-                .setMessage("HelpDesk App\nVersão 1.0.0\n\nDesenvolvido como protótipo.")
+                .setMessage("HelpTech App\nVersão 1.0.0\n\nDesenvolvido como protótipo.")
                 .setPositiveButton("OK", null)
                 .show();
     }
