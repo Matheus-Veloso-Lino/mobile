@@ -21,7 +21,9 @@ Create, Read, Update e Delete (CRUD) para gerenciamento de dados.
 
 ## Demonstração
 
-![a74f6e46-89d2-4886-a12c-b49d4d34048f](https://github.com/user-attachments/assets/414d8a6f-71e0-4231-943b-6675fd90ba91)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/414d8a6f-71e0-4231-943b-6675fd90ba91" width="300">
+</p>
 
 ## Como executar
 
